@@ -32,17 +32,68 @@ section {
 
 }
 
+projects {
 
-.project {
+    padding: 40px 20px;
 
-    background-color: white;
-
-    padding: 10px;
-
-    margin: 10px 0;
+    background-color: #f4f4f4; /* Light background for contrast */
 
 }
 
+
+.project-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+
+    gap: 20px; /* Space between grid items */
+
+}
+
+
+.project-card {
+
+    background-color: white; /* Card background */
+
+    border: 1px solid #ccc; /* Card border */
+
+    border-radius: 5px; /* Rounded corners */
+
+    padding: 20px; /* Inner padding */
+
+    text-align: center; /* Center content */
+
+}
+
+.project-card:hover{
+    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);/* Add a deeper shadow on hover */
+
+}
+
+
+.project-card img {
+
+    max-width: 100%; /* Responsive image */
+
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+.footer-container{
+   display: flex;
+  justify-content: space-between;
+}
+
+.material-symbols-outlined {
+  color:#5f6368;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 h1, h2 {
 
@@ -50,8 +101,12 @@ h1, h2 {
 
 }
 
+a{color:black;}
+
 
 footer {
+
+    position:fixed;
 
     text-align: center;
 
